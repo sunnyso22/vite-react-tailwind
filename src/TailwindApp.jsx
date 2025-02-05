@@ -4,6 +4,8 @@ import Modal from "./Modal"
 import ColorButton from "./ColorButton"
 import SimpleCalendar from "./SimpleCalendar"
 import Range from "./Range"
+import TodoApp from "./TodoApp"
+
 
 
 const TailwindApp = () => {
@@ -23,6 +25,11 @@ const TailwindApp = () => {
             component: <DarkMode />,
             text: "Dark Mode",
             color: "blue"
+        },
+        {
+            component: <TodoApp />,
+            text: "To-do List",
+            color: "yellow"
         },
     ]
 

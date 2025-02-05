@@ -17,7 +17,7 @@ const Range = () => {
     }
 
     return (
-        <>
+        <div className="flex flex-col gap-6 justify-center items-center">
             <input type="range" 
                 onChange={handleChange}
                 value={barValue.current}
@@ -29,7 +29,7 @@ const Range = () => {
                 min={barValue.min} 
                 max={barValue.max}
             />
-        </>
+        </div>
     )
 }
 

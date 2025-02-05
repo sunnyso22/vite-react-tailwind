@@ -11,7 +11,7 @@ const Modal = ({title, component, show, handleClick}) => {
                 className="absolute top-0 left-0 w-full h-full bg-black/50"
             />
             {/* Modal Window */}
-            <div className={`w-full max-w-sm bg-white rounded-md overflow-hidden z-10 transition-all ${show ? "scale-100" : "scale-0"}`}>
+            <div className={`w-full max-w-xl bg-white rounded-md overflow-hidden z-10 transition-all ${show ? "scale-100" : "scale-0"}`}>
                 <div className="border-b-2 p-3 flex justify-between items-center">
                     <div className="font-bold text-gray-700">
                         {title}
@@ -26,7 +26,7 @@ const Modal = ({title, component, show, handleClick}) => {
                     </div>
                 </div>
 
-                <div className="dark:bg-gray-900 flex flex-col gap-6 justify-center items-center p-3">
+                <div className="dark:bg-gray-900 p-8">
                     {component}
                 </div>
             </div>
